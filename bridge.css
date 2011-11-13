@@ -101,9 +101,9 @@ body > header h2 {
 	font-size: 18px;
 	text-align: center;
 	background-color: transparent;
+	color: #fff;
 }
 #builder input.blur {
-	color: #fff;
 	font-weight: 700;
 }
 
