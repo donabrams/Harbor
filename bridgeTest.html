@@ -6,25 +6,32 @@
 	
 	<script>
 	$(function() {
-		var ws = new WebSocket("ws://0.0.0.0:8080");
-		var $log = $("#log");
-		ws.onopen = function(evt) {
+		var setup;
+		var ws;
+		setup = function() {
+			ws = new WebSocket("ws://184.106.177.88:8080");
+			var $log = $("#log");
+			ws.onopen = function(evt) {
+				$log.append("<p>Connection open</p>");
+			}
+			ws.onmessage = function(evt) {
+				$log.append("<p>Received:" + evt.data + "</p>");
+			}
+			ws.onclose = function(evt) {
+				$log.append("<p>Connection closed</p>");
+				$("#send").unbind('click');
+				setTimeout(setup, 1000);
+			}
+			$("#send").click(function(event) {
+				var msg = $("#command").val();
+				ws.send(msg);
+				console.log("sending message:" + msg);
+				$log.append("<p>Sent: " + msg + "</p>");
+				event.stopPropagation();
+			});
 			$log.append("<p>Connection open</p>");
 		}
-		ws.onmessage = function(evt) {
-			$log.append("<p>Received:" + evt.data + "</p>");
-		}
-		ws.onclose = function(evt) {
-			$log.append("<p>Connection closed</p>");
-		}
-		$("#send").click(function(event) {
-			var msg = $("#command").val();
-			ws.send(msg);
-			console.log("sending message:" + msg);
-			$log.append("<p>Sent: " + msg + "</p>");
-			event.stopPropagation();
-		});
-		$log.append("<p>Connection open</p>");
+		setup();
 	});
 	</script>
 </head>
