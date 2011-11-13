@@ -1,0 +1,150 @@
+body {
+	background: url("background-01.png");
+	background-repeat: repeat;
+	background-size: auto auto;
+	text-align:center;
+	font-family: Helvetica, Arial, sans-serif;
+}
+body > * {
+	width: 800px;
+	margin-left:auto;
+	margin-right:auto;
+}
+body > header {
+	height: 150px;
+	background: url("header.svg");
+	background-size: 100% auto;
+	background-repeat: no-repeat;
+	background-position: -48px 0;
+}
+body > header h1,
+body > header h2 {
+	display:none;
+}
+
+#builder ul {
+	clear: both;
+	display: block;
+}
+#builder li {
+	width: 140px;
+	display: inline;
+	list-style-type: none; 
+	margin-bottom: 30px;
+	margin-right: 25px; /* target for jsutified */
+	float: left;
+}
+#builder ul li:last-child {
+	margin-right: 0;
+}
+#builder article {
+	width: 120px;
+	height: 90px;
+	border: 10px solid black;
+	border-radius: 20px;
+}
+
+#builder article header {
+	display:none;
+}
+#builder article nav {
+	background-color: black;
+	height: 35px;
+	margin-top:-5px;
+	margin-left:0px;
+	margin-right:0px;
+}
+#builder article nav button {
+	color: transparent;
+	background-color: transparent;
+	border: 0px;
+	-o-background-size: 100% 100%;
+	-webkit-background-size: 100% 100%;
+	width:30px;
+	height:30px;
+	margin-left:10px;
+	margin-right:10px;
+	margin-top: -5px;
+	margin-bottom: -5px;
+}	
+#builder article nav .eyesOn {
+	background-image: url("eye3.svg");
+}
+#builder article nav .delete {
+	background-image: url("delete4.svg");
+}
+#builder article aside {
+	margin-left: -10px;
+	margin-top:-10px;
+	margin-bottom:-10px;
+	border: 10px inset black;
+	border-top: 0px;	
+	border-radius: 30px;
+	border-top-left-radius: 0px;
+	border-top-right-radius: 0px;
+	border-top-color:transparent;
+	width: 120px;
+	height:90px;
+}
+#builder > form {
+	clear: both;
+}
+
+#builder input {
+	padding-left: 5px;
+	width: 780px;
+	height: 2em;
+	line-height: 300%;
+	border: 9px solid black;
+	border-radius: 9px;
+	margin-top:10px;
+	font-size: 18px;
+	text-align: center;
+	background-color: transparent;
+}
+#builder input.blur {
+	color: #fff;
+	font-weight: 700;
+}
+
+#builder p {
+	position:relative;
+	top: 34px;
+}
+
+#viewer {
+	height: 500px;
+	width: 800px;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 20px;
+	display: none;
+}
+iframe {
+	height: 500px;
+	width: 785px;
+	border: 0;
+	margin-top:10px;
+	margin-left:5px;
+}
+#viewer:after {
+	display: block;
+	content: " ";
+	height: 500px;
+	width: 785px;
+	border: 10px solid black;
+	border-radius: 10px;
+	margin-top: -513px;
+	background-color:black;
+}
+body > footer {
+	margin-top: 30px;
+	text-align: center;
+	padding-bottom: 80px;
+	color: white;
+	font-size: 14px;
+}
+body > footer p {
+	margin-bottom: 5px;
+	letter-spacing: 1px;
+}
