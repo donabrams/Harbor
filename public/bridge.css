@@ -149,3 +149,8 @@ body > footer p {
 	margin-bottom: 5px;
 	letter-spacing: 1px;
 }
+body > footer p a {
+	text-decoration:none;
+	color:white;
+}
+	
