@@ -1,0 +1,16 @@
+%p
+  = form.label :login
+%p
+  = form.text_field :login
+%p
+  = form.label :password, form.object.new_record? ? nil : "Change password"
+%p
+  = form.password_field :password
+%p
+  = form.label :password_confirmation
+%p
+  = form.password_field :password_confirmation
+%p
+  = form.label :email
+%p
+  = form.text_field :email

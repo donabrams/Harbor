@@ -1,6 +1,8 @@
 source 'http://rubygems.org'
 
 gem 'rails', '3.1.1'
+gem 'authlogic', '3.1.0'
+gem 'haml', '3.0.25'
 
 # Bundle edge Rails instead:
 # gem 'rails',     :git => 'git://github.com/rails/rails.git'
@@ -38,5 +40,6 @@ gem 'jquery-rails'
 
 group :test do
   # Pretty printed test output
+  gem 'minitest'
   gem 'turn', :require => false
 end
