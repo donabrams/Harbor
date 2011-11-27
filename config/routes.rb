@@ -55,9 +55,11 @@ Harbor::Application.routes.draw do
   # This is a legacy wild controller route that's not recommended for RESTful applications.
   # Note: This route will make all actions in every controller accessible via GET requests.
   # match ':controller(/:action(/:id(.:format)))'
-  root :controller => "user_sessions", :action => "new"
+  root :to => "fleet#show"
+  match "/fleet" => "fleet#show", :as => :fleet
   resource :account, :controller => "users"
-  resources :password_resets
+  # resources :password_resets
   resources :users
   resource :user_session
+  match "/logout" => "user_sessions#destroy", :as => :logout
 end

@@ -1,7 +1,7 @@
 %h1 Register
-- form_for @user, :url => account_path do |f|
+=form_for @user, :url => account_path do |f|
   -if @user.errors
-    - @user.errors.full_messages.each do |msg|
+    -@user.errors.full_messages.each do |msg|
       %li= msg
-  = render :partial => "form", :object => f
-  = f.submit "Register"
+  =render :partial => "form", :object => f
+  =f.submit "Register"

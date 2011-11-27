@@ -39,7 +39,6 @@ $(function() {
   var apikey = "99ca2c5973394422a839c30948d46b87";
   cloudmine.init({app_id: appid, api_key: apikey});
   var dataCache = {};
-	var teacher = "acoy";
 
 	var pushData = function(callback) {
 		console.log("Pushing:");

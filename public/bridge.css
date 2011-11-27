@@ -21,7 +21,14 @@ body > header h1,
 body > header h2 {
 	display:none;
 }
-
+body > header p {
+	text-align: right;
+	padding-top: .5em;
+}
+body > header p a {
+	color: white;
+	text-decoration: none;
+}
 #builder ul {
 	clear: both;
 	display: block;

@@ -4,9 +4,9 @@
 	<title>Digital Harbor</title>
   <link rel="stylesheet" type="text/css" href="reset.css">
   <link href="bridge.css" rel="stylesheet" type="text/css"/>
-	<script src="jquery-1.7.min.js"></script>
-	<script src="jquery.hint.js"></script>
-	<script src="cloudmine.js"></script>
+	<script src="/jquery-1.7.min.js"></script>
+	<script src="/jquery.hint.js"></script>
+	<script src="/cloudmine.js"></script>
 	<script type="simple/template" id="builderEntity">
 		<article>
 			<header>
@@ -20,12 +20,16 @@
 			</aside>
 		</article>
 	</script>
-	<script src="bridge.js"></script>
+	<script>
+	  teacher = "<%= @teacher %>";
+	</script>
+	<script src="/bridge.js"></script>
 </head>
 <body>
 	<header>
 		<h1>Digital Harbor</h1>
 		<h2>Get everyone on the same page</h2>
+		<p><%= link_to "Logout", logout_path %></p>
 	</header>
 	<section id="builder">
 		<ul>

@@ -10,7 +10,7 @@ class UsersControllerTest < ActionController::TestCase
   
   test "should create user" do
     assert_difference('User.count') do
-      post :create, :user => { :login => "acoy", :password => "yay2", :password_confirmation => "yay2" }
+      post :create, :user => { :login => "acoy2", :email => "test@tester.com", :password => "yay2", :password_confirmation => "yay2" }
     end
     assert_redirected_to account_path
   end
@@ -20,13 +20,13 @@ class UsersControllerTest < ActionController::TestCase
     get :show
     assert_response :success
   end
-
-  test "should get edit DON" do
+  
+  test "should get edit" do
     UserSession.create(users(:coy))
     get :edit, :id => users(:coy).id
     assert_response :success
   end
-
+  
   test "should update user" do
     UserSession.create(users(:coy))
     put :update, :id => users(:coy).id, :user => { }

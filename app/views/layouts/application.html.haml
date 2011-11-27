@@ -1,9 +1,15 @@
 !!! 5
 %html
   %head
-    %title Harbor
-    = stylesheet_link_tag    "application"
-    = javascript_include_tag "application"
-    = csrf_meta_tags
+    %title Digital Harbor
+    =stylesheet_link_tag    "/reset"
+    =stylesheet_link_tag    "application"
+    =javascript_include_tag "application"
+    =csrf_meta_tags
 %body
-  = yield
+  %header
+    %h1 Digital Harbor
+    %h2 Get everyone on the same page
+    %p= link_to "Logout", logout_path
+  %section#content  
+    =yield
