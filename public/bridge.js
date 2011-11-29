@@ -108,8 +108,12 @@ $(function() {
 	var fixSites = function() {};
 	
 	$("form").submit(function() {
-		var url = $("#newUrl").val();
-		addUrl(url);
+		try {
+			var url = $("#newUrl").val();
+			addUrl(url);
+		} catch(err) {
+			alert("There was an error adding this page.");
+		}
 		return false;
 	});
 	$('#builder input[title!=""]').hint();
