@@ -1,4 +1,7 @@
 var replaceAll = function(str, substr, replaceWith) {
+	if (str == null) {
+		return null;
+	}
 	var out = str.replace(substr, replaceWith);
 	while (out.indexOf(substr) >= 0) {
 		out = out.replace(substr, replaceWith);
