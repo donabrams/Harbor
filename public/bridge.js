@@ -60,8 +60,7 @@ $(function() {
 		$(".eyesOn", li).click(function() {
 			var url = $("h3", li).html();
 			dataCache.eyesOn = url;
-			$("#viewer iframe").attr("src", url);
-			$("#viewer").show();
+			$("#viewer iframe").attr("src", url).show();
 			pushData();
 		});
 		$(".delete", li).click(function() {
