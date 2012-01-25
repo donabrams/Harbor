@@ -3,19 +3,19 @@ body {
 	background-repeat: repeat;
 	background-size: auto auto;
 	text-align:center;
-	font-family: Helvetica, Arial, sans-serif;
+	font-family: "omnes-pro", Helvetica, Arial, sans-serif;
 }
 body > * {
-	width: 800px;
+	width: 90%;
 	margin-left:auto;
 	margin-right:auto;
 }
 body > header {
 	height: 150px;
-	background: url("header.svg");
-	background-size: 100% auto;
+	background: url("logotopwhite.svg");
+	background-size: 220px 100px;
 	background-repeat: no-repeat;
-	background-position: -48px 0;
+	background-position: right top;
 }
 body > header h1,
 body > header h2 {
@@ -24,42 +24,74 @@ body > header h2 {
 body > header p {
 	text-align: right;
 	padding-top: .5em;
+	margin-right: 230px;
 }
 body > header p a {
 	color: white;
 	text-decoration: none;
 }
+#builder {
+	text-align: left;
+}
+#builder p {
+	color: white;
+	font-size: 110px;
+	font-family: "omnes-pro", sans-serif;
+	font-weight: 600;
+	text-align: left;
+	margin-top: .5em;
+}
+
+#builder input {
+	width: 100%;
+	height: 2em;
+	border: 8px solid white;
+	border-radius: 20px;
+	margin-top: 50px;
+	margin-left: 0px;
+	font-size: 35px;
+	font-family: "omnes-pro", sans-serif;
+	font-weight: 300;
+	text-align: center;
+	background-color: transparent;
+	color: white;
+}
+#builder input.blur {
+	font-weight: 300;
+	letter-spacing: 1px;
+}
+
 #builder ul {
-	clear: both;
 	display: block;
+	margin-top: 80px;
 }
 #builder li {
-	width: 140px;
-	display: inline;
-	list-style-type: none; 
+	width: 200px;
+	display: inline-block;
+	list-style-type: none;
 	margin-bottom: 30px;
-	margin-right: 25px; /* target for jsutified */
-	float: left;
+	margin-right: 80px; /* target for jsutified */
 }
 #builder ul li:last-child {
 	margin-right: 0;
 }
 #builder article {
-	width: 120px;
-	height: 90px;
-	border: 10px solid black;
-	border-radius: 20px;
+	width: 200px;
+	height: 170px;
+	border: 10px solid white;
+	border-radius: 30px;
 }
 
 #builder article header {
 	display:none;
 }
 #builder article nav {
-	background-color: black;
-	height: 35px;
+	background-color: white;
+	height: 50px;
 	margin-top:-5px;
 	margin-left:0px;
 	margin-right:0px;
+	border-radius: 10px;
 }
 #builder article nav button {
 	color: transparent;
@@ -67,90 +99,64 @@ body > header p a {
 	border: 0px;
 	-o-background-size: 100% 100%;
 	-webkit-background-size: 100% 100%;
-	width:30px;
-	height:30px;
-	margin-left:10px;
-	margin-right:10px;
-	margin-top: -5px;
+	width:40px;
+	height:40px;
+	margin-top: 0px;
 	margin-bottom: -5px;
 }	
 #builder article nav .eyesOn {
+	margin-left:20px;
 	background-image: url("eye3.svg");
 }
 #builder article nav .delete {
+	margin-left:80px;
 	background-image: url("delete4.svg");
 }
 #builder article aside {
-	margin-left: -10px;
-	margin-top:-10px;
-	margin-bottom:-10px;
-	border: 10px inset black;
+	margin-left: 0px;
+	margin-top: -10px;
+	margin-bottom: 0px;
+	border: 1px black;
 	border-top: 0px;	
-	border-radius: 30px;
+	border-radius: 19px;
 	border-top-left-radius: 0px;
 	border-top-right-radius: 0px;
 	border-top-color:transparent;
-	width: 120px;
-	height:90px;
-	background-color:black;
-}
-#builder > form {
-	clear: both;
-}
-
-#builder input {
-	padding-left: 5px;
-	width: 780px;
-	height: 2em;
-	line-height: 300%;
-	border: 9px solid black;
-	border-radius: 9px;
-	margin-top:10px;
-	font-size: 18px;
-	text-align: center;
-	background-color: transparent;
-	color: #fff;
-}
-#builder input.blur {
-	font-weight: 700;
-}
-
-#builder p {
-	position:relative;
-	top: 34px;
+	width: 200px;
+	height: 135px;
+	background-color:white;
 }
 
 #viewer {
-	height: 500px;
-	width: 800px;
+	height: 50%;
+	width: 90%;
 	margin-left: auto;
 	margin-right: auto;
 	margin-top: 20px;
 	display: none;
+	clear: both;
 }
-iframe {
-	height: 500px;
-	width: 785px;
+#viewer iframe {
+	height: 100%;
+	width: 100%;
 	border: 0;
 	margin-top:10px;
 	margin-left:5px;
-}
-#viewer:after {
-	display: block;
-	content: " ";
-	height: 500px;
-	width: 785px;
-	border: 10px solid black;
+	border: 10px solid white;
 	border-radius: 10px;
-	margin-top: -513px;
-	background-color:black;
 }
 body > footer {
-	margin-top: 30px;
+  clear: both;
+	width: 100%;
+	margin-top: 200px;
+	margin-left: 0px;
+	margin-right: 0px;
+	padding-top: 3em;
+	padding-bottom: 3em;
+	color: black;
 	text-align: center;
-	padding-bottom: 80px;
-	color: white;
 	font-size: 14px;
+	background: rgba(200,200,200,.6);
 }
 body > footer p {
 	margin-bottom: 5px;
@@ -158,6 +164,6 @@ body > footer p {
 }
 body > footer p a {
 	text-decoration:none;
-	color:white;
+	color:black;
 }
 	
