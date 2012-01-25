@@ -120,4 +120,6 @@ $(function() {
 		return false;
 	});
 	$('#builder input[title!=""]').hint();
+	
+	$("#builder p").fitText(.9);
 });
