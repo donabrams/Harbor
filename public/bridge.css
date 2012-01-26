@@ -97,9 +97,9 @@ body > header p a {
 #builder article nav button {
 	color: transparent;
 	background-color: transparent;
+	background-size: 100% 100%;
+	background-repeat: no-repeat;
 	border: 0px;
-	-o-background-size: 100% 100%;
-	-webkit-background-size: 100% 100%;
 	width:40px;
 	height:40px;
 	margin-top: 0px;
