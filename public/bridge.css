@@ -86,7 +86,8 @@ p.login {
 }
 #builder {
 	text-align: left;
-	height: 85%;
+	min-height: 85%;
+	margin-bottom: 12em;
 }
 #builder input {
 	width: 100%;
@@ -157,7 +158,6 @@ p.login {
 	background-color:white;
 }
 body > footer {
-  clear: both;
 	width: 100%;
 	margin-left: 0px;
 	margin-right: 0px;
