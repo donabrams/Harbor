@@ -96,16 +96,16 @@ p.login {
 #builder ul {
 	display: block;
 	margin-top: 80px;
+	margin-left: -40px;
+	margin-right: -40px;
 }
 #builder li {
 	width: 200px;
 	display: inline-block;
 	list-style-type: none;
 	margin-bottom: 30px;
-	margin-right: 80px; /* target for jsutified */
-}
-#builder ul li:last-child {
-	margin-right: 0;
+	margin-right: 40px; /* target for jsutified */
+	margin-left: 40px;
 }
 #builder article {
 	width: 200px;
