@@ -3,13 +3,19 @@
   %head
     %title Digital Harbor
     =stylesheet_link_tag    "/reset"
-    =stylesheet_link_tag    "application"
-    =javascript_include_tag "application"
+    %script{:src=>"http://use.typekit.com/yua2vns.js"}
+    :javascript
+      try{Typekit.load();}catch(e){}
+    %script{:src=>"/jquery-1.7.min.js"}
+    %script{:src=>"/jquery.hint.js"}
+    %script{:src=>"/jquery.fittext.js"}
+    =stylesheet_link_tag    "/bridge"
+    %script{:src=>"/application.js"}
     =csrf_meta_tags
 %body
   %header
     %h1 Digital Harbor
-    %h2 Get everyone on the same page
-    %p= link_to "Logout", logout_path
+    -if @current_user
+      %p= link_to "Logout", logout_path
   %section#content  
     =yield

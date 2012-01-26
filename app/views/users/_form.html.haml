@@ -1,16 +1,12 @@
 %p
-  = form.label :login
-%p
-  = form.text_field :login
-%p
-  = form.label :password, form.object.new_record? ? nil : "Change password"
+  = form.text_field :login, :title => 'Login'
 %p
   = form.password_field :password
 %p
-  = form.label :password_confirmation
+  = form.label :password, form.object.new_record? ? nil : "Change password"
 %p
   = form.password_field :password_confirmation
 %p
-  = form.label :email
+  = form.label :password_confirmation
 %p
-  = form.text_field :email
+  = form.text_field :email, :title => "Email"

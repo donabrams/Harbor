@@ -60,7 +60,7 @@ $(function() {
 		$(".eyesOn", li).click(function() {
 			var url = $("h3", li).html();
 			dataCache.eyesOn = url;
-			$("#viewer iframe").attr("src", url).show();
+			window.open(url, "harbor-child");
 			pushData();
 		});
 		$(".delete", li).click(function() {
@@ -118,7 +118,8 @@ $(function() {
 		}
 		return false;
 	});
-	$('#builder input[title!=""]').hint();
 	
-	$("#builder p").fitText(.9);
+	//moved to application.js
+	//$('#builder input[title!=""]').hint();
+	//$("#builder h2").fitText(.9);
 });
