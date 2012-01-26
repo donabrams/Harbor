@@ -14,7 +14,7 @@ body > * {
 body > header {
 	height: 150px;
 	background: url("logotopwhite.svg");
-	background-size: 220px 100px;
+	background-size: 225px 100px;
 	background-repeat: no-repeat;
 	background-position: right top;
 }
