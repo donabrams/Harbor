@@ -18,8 +18,7 @@ body > header {
 	background-repeat: no-repeat;
 	background-position: right top;
 }
-body > header h1,
-body > header h2 {
+body > header h1 {
 	display:none;
 }
 body > header p {
@@ -34,7 +33,7 @@ body > header p a {
 #builder {
 	text-align: left;
 }
-#builder p {
+#builder h2 {
 	color: white;
 	font-size: 110px;
 	font-family: "omnes-pro", sans-serif;
